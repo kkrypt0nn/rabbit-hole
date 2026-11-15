@@ -52,6 +52,7 @@ type DeprecatedFeature struct {
 	DocumentationUrl string `json:"doc_url"`
 	// Where the deprecation comes from. It is 'rabbit', unless the deprecation comes from a plugin
 	ProvidedBy string `json:"provided_by"`
+	State      string `json:"state"`
 }
 
 // ListDeprecatedFeatures retrieves a list of deprecated features from the server.
