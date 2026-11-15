@@ -16,9 +16,10 @@ type FeatureFlag struct {
 	// Desc is the description of the feature flag.
 	Desc string `json:"desc,omitempty"`
 	// DocURL is the URL to a webpage to learn more about the feature flag.
-	DocURL    string    `json:"doc_url,omitempty"`
-	State     State     `json:"state,omitempty"`
-	Stability Stability `json:"stability,omitempty"`
+	DocURL       string    `json:"doc_url,omitempty"`
+	RequireLevel string    `json:"require_level,omitempty"`
+	State        State     `json:"state,omitempty"`
+	Stability    Stability `json:"stability,omitempty"`
 	// ProvidedBy is the RabbitMQ component or plugin which provides the feature flag.
 	ProvidedBy string `json:"provided_by,omitempty"`
 }
